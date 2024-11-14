@@ -11,18 +11,18 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     text-decoration: none;
     list-style: none;
     font-family: "Be Vietnam Pro", sans-serif;
     color: var(--color-text);
     box-sizing: border-box;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-x: none;
 }
 
-body {
-    overflow-x: hidden;
-}
 
 /* HEADER */
 header {
@@ -36,29 +36,34 @@ header {
 /* MENU */
 .menu-navegacao ul {
     display: flex;
+    
 }
 
 .menu-navegacao ul li {
     margin-right: 29px; /* Espaçamento entre os itens */
+    overflow-x: hidden;
 }
 
 .menu-navegacao ul li:last-child {
     margin-right: 0; /* Remove margem do último item */
+    overflow-x: hidden;
 }
 
 .menu-navegacao a {
-    font-size: 16px;
+    font-size: 1rem;
     color: #4D4D4D;
     transition: all 0.5s;
+    overflow-x: hidden;
 }
 
 .menu-navegacao a:hover{
     color: var(--color-primary);
+    overflow-x: hidden;
 }
 
 .menu-action a {
     font-family: "Poppins", serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: medium;
     padding: 12px 32px;
     border: none;
@@ -67,12 +72,12 @@ header {
     color: #FFFFFF;
     transition: all 0.5s;
     animation: animate-outline 1s ease-out infinite;
+    overflow-x: hidden
 }
 
 .menu-action a:hover {
-    background: transparent;
-    border: 1px solid var(--color-primary);
-    color: var(--color-primary);
+    background-color: #2a924f;
+    overflow-x: hidden
 }
 
 /* HOME */ 
@@ -81,6 +86,8 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     transition: background-image 1s ease-in-out;
+    width: 100%;
+    overflow-x: hidden
 }
 
 .home-container {
@@ -88,6 +95,8 @@ header {
     padding: 30px;
     border: none;
     border-radius: 20px;
+    width: 100%;
+    overflow-x: hidden
 }
 
 .home {
@@ -95,28 +104,32 @@ header {
     padding-bottom: 104px;
     padding-left: 135px;
     padding-right: 695px;
+    box-sizing: border-box;
+    overflow-x: hidden
 }
 
 .home-text {
     margin-bottom: 40px;
+    overflow-x: hidden
 }
 
 .home-text h4 {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 12px;
     font-weight: 500;
     line-height: 120%;
+    overflow-x: hidden
 }
 
 .home-text h2 {
-    font-size: 52px;
+    font-size: 3.25rem;
     font-weight: bold;
     line-height: 115%;
     margin-bottom: 24px;
 }
 
 .home-text h5 {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
     color: #666666;
 }
@@ -124,12 +137,13 @@ header {
 .home-buttons {
     display: flex;
     gap: 25px;
+    justify-content: left;
 }
 
 .home-buttons a {
     padding: 17px 32px;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 1rem;
     border: none;
     background-color: var(--color-primary);
     color: #FFFFFF;
@@ -137,6 +151,12 @@ header {
 
 .home-buttons a:nth-child(1) {
     animation: animate-outline 1s ease-out infinite;
+}
+
+.home-buttons a:nth-child(1):hover{
+    background-color: #2a924f;
+    color: var(--color-background);
+    transition: all 0.5s;
 }
 
 .home-buttons a:nth-child(2) {
@@ -158,21 +178,24 @@ header {
     gap: 110px;
     padding-left: 135px;
     padding-right: 135px;
-    padding-top: 150px;
-    padding-bottom: 75px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 /* padding: 75px 135px; */ 
 
+.about-text {
+    flex: 2;
+}
 .about-text h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
     line-height: 120%;
     margin-bottom: 16px;
 } 
 
 .about-text p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 160%;
     color: #666666;
@@ -182,10 +205,11 @@ header {
 .about-text .about-points {
    display: flex;
    gap: 40px;
+   justify-content: left;
 }
 
 .about-text .about-points h5 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 120%;
     margin-bottom: 16px;
@@ -202,22 +226,28 @@ header {
 .about-points .about-points-items i {
     color: var(--color-primary);
 }
+
 .about-text .about-btn {
     display: flex;
     margin-top: 20px;
     gap: 24px;
+    justify-content: left;
 }
 
 .about-text .about-btn a {
     padding: 12px 32px;
     border-radius: 6px;
-    font-size: 16px; 
+    font-size: 1rem;
     display: inline-block; 
     transition: all 0.5s;
 }
 
 .about-text .about-btn a:nth-child(1) {
     animation: animate-outline 1s ease-out infinite;
+}
+
+.about-text .about-btn a:nth-child(1):hover {
+    background-color: #2a924f;
 }
 
 .about-text .about-btn a:nth-child(2):hover {
@@ -242,6 +272,9 @@ header {
     color: var(--color-text);
 }
 
+.about-img {
+    flex: 1;
+}
 /* DIVISÃO */
 .divider {
     border-top: 1px solid #83A790; /* Cor e espessura da linha */
@@ -261,44 +294,40 @@ header {
 }
 
 .services-title h2 {
-    font-size: 44px;
+    font-size: 2.75rem;
     font-weight: 600;
     line-height: 120%;
 }
 
 .services-title h5 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     line-height: 120%;
     margin-bottom: 12px;
 }
 
 .services-title p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300; /* regular */
     line-height: 150%;
     color: #666666;
 }
 
 .services-cards {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 50px;
+  
 }
 
 .card-item {
     padding-bottom: 30px;
-    width: 30%;
-}
-
-.card-item img {
-    margin-bottom: 16px;
-    border-radius: 40px;
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1); /* Adicionando a sombra */
+    width: 90%;
 }
 
 .card-item h3 {
     margin-bottom: 16px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 120%;
 
@@ -307,7 +336,7 @@ header {
 .card-item p {
     margin-bottom: 24px;
     text-align: justify;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     color: #666666;
     line-height: 150%;
@@ -318,7 +347,7 @@ header {
     border: 1px solid #666666;
     border-radius: 6px;
     background: transparent;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--color-text);
     transition: all 0.5s;
 }
@@ -332,25 +361,25 @@ header {
 /* QUOTE */ 
 .quote {
     display: flex;
-    padding: 75px 135px;
+    padding: 200px 135px;
     gap: 100px;
 }
 
 .quote h5 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 120%;
 }
 
 .quote h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
     line-height: 120%;
     margin-bottom: 32px;
 }
 
 .quote p {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 30px;
     font-weight: 300;
     color: #666666;
@@ -361,7 +390,7 @@ header {
     border: none;
     border-radius: 6px;
     padding: 22px 32px;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     background-color: var(--color-primary);
     color: var(--color-background);
@@ -370,9 +399,7 @@ header {
 }
 
 .quote a:hover {
-    background: transparent;
-    border: 1px solid var(--color-primary);
-    color: var(--color-primary);
+    background-color: #2a924f;
 }
 
 /* TEAM */
@@ -387,20 +414,20 @@ header {
 }
 
 .team-text h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
     line-height: 120%;
 }
 
 .team-text h5 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     line-height: auto;
     margin-bottom: 12px;
 }
 
 .team-text p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 150%;
     color: #666666;
@@ -437,12 +464,13 @@ header {
 
 /* PLANS */
 .plans {
-    padding: 75px 135px;
+    padding: 100px 135px;
     background-color: var(--color-primary);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .plans-text {
     display: flex;
     flex-direction: column;
@@ -451,14 +479,14 @@ header {
 } 
 
 .plans-text h5 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 300;
     line-height: 120%;
     color: #FFFFFF;
 }
 
 .plans-text h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
     line-height: 120%;
     text-align: center;
@@ -477,33 +505,35 @@ header {
     background-color: #FFFFFF;
     border: none;
     border-radius: 20px;
-    padding: 35px 30px;
+    padding: 20px 20px;
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1); /* Adicionando a sombra */
     align-items: center;
     align-content: center;
     justify-items: center;
     justify-content: center;
     transition: all 0.5s;
+    width: 380px;
 }
 
 .plans .plans-cards .plans-item:hover {
-    margin-top: -20px;
+    margin-top: -30px;
+    box-shadow: 4px 4px 12px rgb(0, 0, 0);
 }
 
 .plans .plans-cards .plans-item a {
-    font-size: 16;
+    font-size: 1rem;
     line-height: 120%;
     padding: 10px 40px;
     color: var(--color-text);
     border: 1px solid #666666;
     border-radius: 6px;
     display: inline-block; /* Para funcionar como botão */
-    margin-top: 36px;
+    margin-top: 3px;
     transition: all 0.5s;
 }
 
 .plans .plans-cards .plans-item a:hover {
-    background-color: var(--color-primary);
+    background-color: #30f174;
     color: #F5F4F4;
     border: none;
     
@@ -515,7 +545,7 @@ header {
 }
 
 .plans .plans-cards .plans-item .plans-topics h5 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 300%;
     color: #666666;
@@ -528,8 +558,8 @@ header {
 }
 
 .plans .plans-cards .plans-item .plans-title h4 {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 1.25rem;
+    font-weight: 800;
     line-height: 120%;
 }
 
@@ -540,7 +570,7 @@ header {
     margin-top: 24px;
     margin-bottom: 36px;
     border-radius: 10px;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 120%;
 }
@@ -548,7 +578,7 @@ header {
 .plans .plans-cards .plans-item .plans-title span {
     background: #e8faea;
     color: var(--color-primary);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 120%;
 }
@@ -557,32 +587,35 @@ header {
 .feedback {
     display: flex;
     gap: 80px;
-    padding: 75px 135px;
+    padding: 200px 135px;
+    padding-bottom: 100px;
     align-items: start;
     align-content: flex-start;
     justify-content: flex-start;
     justify-items: flex-start;
 }
 
+.feedback .feedback-text {
+    width: 50%;
+}
+
 .feedback .feedback-text h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
     line-height: 120%;
     margin-bottom: 24px;
 }
 
 .feedback .feedback-text p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 160%;
     color: #666666;
     text-align: justify;
 }
 
 .swiper-container {
-    width: 60%;
     overflow: hidden; /* Garante que os slides não ultrapassem os limites do contêiner */
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 50%;
     padding-bottom: 10px;
 }
 
@@ -623,14 +656,37 @@ header {
     width: calc(100% - 30px); /* Garante que o slide ocupe toda a largura disponível menos a margem */
 }
 
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;  /* Ajuste a posição */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--color-primary) !important; /* Adicionando !important para garantir que o estilo seja aplicado */
+}
+
+
 .feedback .feedback-img-text h4 {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 20px;
     margin-bottom: 12px;
 }
 
 .feedback .feedback-img-text h5 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 16px;
     margin-bottom: 12px;
@@ -638,7 +694,7 @@ header {
 }
 
 .feedback .feedback-img-text p {
-    font-size: 16px;
+    font-size: 1rem;
     text-align: justify;
     line-height: 24px;
     margin-top: 16px;
@@ -646,10 +702,41 @@ header {
     letter-spacing: 1%;
 }
 
-.feedback .feedback-img-text i {
+/* Estilo das estrelas */
+.feedback-img-text .fa-star {
     color: var(--color-primary);
+    margin-right: 5px;
 }
 
+.feedback .feedback-img-text img {
+    width: 100px; /* Tamanho da imagem */
+    height: 100px;
+    border-radius: 50%; /* Deixa a imagem circular */
+    object-fit: cover;
+}
+
+/* Estilo para a coluna esquerda */
+.left-column {
+    flex: 1; /* A coluna esquerda ocupará o espaço disponível */
+    margin-right: 20px; /* Espaço entre as colunas */
+}
+
+/* Estilo para a coluna direita */
+.right-column {
+    width: 120px; /* Ajuste o tamanho da coluna direita conforme necessário */
+    display: flex;
+    justify-content: center; /* Centraliza a imagem na coluna direita */
+    align-items: center;
+}
+
+/* Estilo da imagem de citação */
+.quotation-icon {
+    margin-top: 10px;
+    width: auto !important; /* Tamanho da imagem de citação */
+    height: 55px !important;
+    border-radius: 0 !important; /* Garante que a imagem de citação não fique circular */
+    object-fit: cover !important;/* Manter a imagem dentro do tamanho desejado sem distorção */
+}
 
 /* CONTACT */
 .contact {
@@ -658,30 +745,41 @@ header {
     gap: 80px;
 }
 
+.contact .contact-info {
+    width: 50%;
+}
 .contact .contact-info h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-bottom: 40px;
 }
 
 .contact .contact-info .contact-info-box {
     display: flex;
     flex-direction: column;
+    align-items: left;
+    align-content: left;
+    justify-content: left;
+    justify-items: left;
     gap: 30px;
+    
 }
 
 .contact .contact-info .contact-info-icon {
     display: flex;
-    gap: 12px;
     align-content: center;
     align-items: center;
-    padding: 20px;
+    justify-content: left;
+    justify-items: left;
     background-color: #FBFBFB;
     border: 1px solid #F3F3F3;
     border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
 }
 
 .contact .contact-info .contact-info-icon i {
-    font-size: 30px;
+    font-size: 1.875rem;
     display: flex;
     align-content: center;
     align-items: center;
@@ -689,7 +787,6 @@ header {
     justify-items: center;
     border-radius: 10px;
     color: var(--color-primary);
-    padding: 10px;
 }
 
 .contact .contact-info .contact-info-icon h4 {
@@ -697,32 +794,32 @@ header {
 }
 
 .contact .contact-info .contact-info-box .contact-info-icon h4 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     letter-spacing: 3%;
 }
 
 .contact .contact-info .contact-info-box .contact-info-icon p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 120%;
     color: #666666;
 }
 
 .contact .contact-msg .contact-msg-text h5 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 120%;
     margin-bottom: 8px;
 }
 
 .contact .contact-msg .contact-msg-text h2 {
-    font-size: 36px;
+    font-size: 2.25rem;
     line-height: 120%;
     margin-bottom: 16px;
 }
 
 .contact .contact-msg .contact-msg-text p {
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "Be Vietnam Pro", sans-serif;
     line-height: 150%;
     letter-spacing: -1px;
@@ -736,16 +833,13 @@ header {
     border-radius: 6px;
     padding: 12px 24px;
     margin-top: 30px;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
     transition: all 0.5s;
 }
 
 .contact .contact-msg .forms button:hover {
-    border: 1px solid var(--color-primary);
-    color: var(--color-primary);
-    background: transparent;
-
+    background-color: #2a924f;
 }
 
 .contact .contact-msg .forms form {
@@ -768,7 +862,7 @@ header {
 .contact .contact-msg .forms form input::placeholder {
     color: #828080;
     font-family: "Be Vietnam Pro", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .contact .contact-msg .forms form textarea {
@@ -785,7 +879,7 @@ header {
 .contact .contact-msg .forms form textarea::placeholder {
     color: #828080;
     font-family: "Be Vietnam Pro", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /* FOOTER */
@@ -801,14 +895,17 @@ footer {
 
 .footer {
     display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 80px;
 }
 
-.footer .footer-company, .footer .footer-more {
+.footer .footer-company, .footer .footer-more, .footer .social-medias{
     display: flex;
     flex-direction: column;
 }
 
-.footer .footer-logo p, .footer .footer-company h3, a, .footer .footer-more h3, a {
+.footer .footer-logo p, .footer .footer-company h3, a, .footer .footer-more h3, a, .footer .social-medias h3, a {
     color: #FFFFFF;
 }
 
@@ -818,27 +915,24 @@ footer {
 
 .footer .footer-logo p {
     margin-top: 24px;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 160%;
+    text-align: justify;
 }
 
-.footer .footer-company, .footer .footer-more {
-    margin-left: 80px;
-}
-
-.footer .footer-company h3, .footer .footer-more h3 {
-    font-size: 20px;
+.footer .footer-company h3, .footer .footer-more h3, .footer .social-medias h3 {
+    font-size: 1.25rem;
     margin-bottom: 14px;
 }
 
-.footer .footer-company a, .footer .footer-more a {
-    font-size: 16px;
+.footer .footer-company a, .footer .footer-more a, .footer .social-medias a {
+    font-size: 1rem;
     font-weight: 300;
     line-height: 40px;
     transition: all 0.5s;
 }
 
-.footer .footer-company a:hover, .footer .footer-more a:hover{
+.footer .footer-company a:hover, .footer .footer-more a:hover, .footer .social-medias a:hover{
     color: var(--color-primary);
 }
 
@@ -850,21 +944,30 @@ footer {
 
 .footer-rights {
     display: flex;
+    flex-direction: column;
     justify-items: center;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 .footer-rights h6 {
     color: #FFFFFF;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 300;
     line-height: 120%;
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 .footer-rights h6 a {
     font-weight: bold;
     color: var(--color-primary);
+}
+
+.footer-rights-main {
+    display: flex;
+    gap: 20px;
 }
 
 /* ANIMATION */

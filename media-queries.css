@@ -6,23 +6,425 @@
     1201px e acima —  telas muito grandes, TVs
 */
 
+/* dispositivos móveis */
 @media (max-width: 480px) {
+    header {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
-    
-    .menu-navegacao nav ul li a {
+    .logo img {
+        width: 80%;
+    }
+
+    .menu-navegacao {
         display: none;
     }
-  }
 
-@media (width: 768px) {
+    .menu-action a {
+        display: none;
+    }
+
+    .home {
+        padding: 0;
+        width: 100vw !important;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+        padding-top: 100px !important;
+        padding-bottom: 100px !important;
+
+    }
+
+    .home .home-container {
+        width: 100% !important;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        padding: 30px !important;
+
+    }
+
+    .home .home-container .home-text h2 {
+        font-size: 1.7rem;
+    }
+
+    .home-buttons {
+        display: flex;
+        gap: 25px;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .home-buttons a {
+        padding: 10px;
+
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 150px;
+        padding-bottom: 75px;
+        gap: 80px;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .about .about-img {
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
+
+    .services .services-title {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .services .services-title .services-text p {
+        text-align: justify;
+    }
+
+    .services .services-cards {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        /* Uma única coluna */
+        width: 100%;
+        /* Ajusta automaticamente a altura de cada linha */
+        gap: 10px;
+        /* Espaçamento entre os elementos, opcional */
+    }
+
+
+    .services .services-cards .card-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .quote {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        padding-bottom: 250px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .quote img {
+        display: none;
+    }
+
+    .quote .quote-text h5 {
+        margin-bottom: 10px;
+    }
+
+    .quote .quote-text p {
+        text-align: justify;
+    }
+
+    /* FEEDBACKS */
+    .feedback {
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    .feedback .feedback-text {
+        width: 100%;
+    }
+
+    .feedback .swiper-container {
+        width: 100% !important;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        align-items: left;
+    }
+
+    .contact .contact-info h2 {
+        font-size: 2rem;
+    }
+
+    .contact .contact-info {
+        width: 100%;
+    }
+
+    .contact-info-box,
+    .contact-info-icon {
+        align-items: left;
+        align-content: left;
+    }
+
+    /* FOOTER */
+    footer {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .footer {
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .footer .footer-company,
+    .footer .footer-more,
+    .footer .social-medias {
+        margin-left: 0px;
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    .footer .footer-logo {
+        width: 100%;
+    }
+
+    .footer .footer-logo p {
+        text-align: justify;
+    }
+
+    .footer-rights {
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-rights h6 a {
+        line-height: 30px;
+    }
+
+    .footer-right-main {
+        flex-direction: column;
+    }
 
 }
 
-@media (width: 1024px) {
-    
+/*iPads, tablets */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    /* NAVEGAÇÃO */
+
+    /* HOME */
+    .home {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+        padding-right: 150px;
+    }
+
+    .home .home-container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .home .home-text h4 {
+        font-size: 0.8rem;
+    }
+
+    .home .home-text h2 {
+        font-size: 2rem;
+    }
+
+    .home .home-text h5 {
+        font-size: 1rem;
+    }
+
+    /* ABOUT */
+    .about {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 150px;
+        padding-bottom: 75px;
+        justify-content: space-between;
+        gap: 80px;
+    }
+
+    .about .about-img img {
+        height: 300px;
+    }
+
+    .about .about-text h2 {
+        font-size: 2rem;
+    }
+
+    .about .about-text p {
+        text-align: justify;
+    }
+
+    .about .about-text .about-points {
+        justify-content: space-between;
+        margin-bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 3fr);
+    }
+
+    .about .about-text .about-points h5 {
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+    }
+
+    .about .about-text .about-btn {
+        margin-top: 10px;
+        gap: 42px;
+    }
+
+    .about .about-text .about-btn a {
+        padding: 12px 18px;
+        font-size: 0.9rem;
+
+    }
+
+    /* SERVICES */
+    .services {
+        padding: 100px 50px;
+    }
+
+    .services .services-title {
+        gap: 55px;
+    }
+
+    .services .services-title h2 {
+        font-size: 2rem;
+    }
+
+    .services .services-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        width: 100%;
+    }
+
+    .services .services-cards .card-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* QUOTE */
+    .quote {
+        padding-top: 100px;
+        padding-bottom: 250px;
+        padding-left: 50px;
+        padding-right: 50px;
+        gap: 30px;
+    }
+
+    .quote .quote-text h2 {
+        font-size: 2rem;
+    }
+
+    .quote .quote-img {
+        width: 40%;
+    }
+
+    .quote .quote-img img {
+        height: 300px;
+    }
+
+    /*PLANS */
+    .plans {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .plans .plans-cards {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        align-content: center;
+    }
+
+    .plans .plans-cards .plans-item {
+        width: 100%;
+    }
+
+    .plans .plans-cards .plans-item:hover {
+        box-shadow: 4px 4px 12px rgb(0, 0, 0);
+    }
+
+    /* FEEDBACKS */
+    .feedback {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .swiper-container {
+        overflow: hidden;
+        /* Garante que os slides não ultrapassem os limites do contêiner */
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    /* CONTACT */
+    .contact {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .contact .contact-msg .contact-msg-text p {
+        text-align: justify;
+    }
+
+    /* FOOTER */
+    footer {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
-@media (width: 1200px) {
-    
+/* telas pequenas, laptops */
+@media (max-width: 1024px) {
+
 }
 
+/* desktops, telas grandes */
+@media (max-width: 1200px) {
+
+}

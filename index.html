@@ -6,14 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- EmailJS SDK -->
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.11.0/email.min.js"></script>
-
-    <!-- Inicialização do EmailJS -->
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("FaoTyMxFAifp_HskI");
-        })(); 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
+    <script src="/script.js"></script>
 
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/media-queries.css">
@@ -21,9 +16,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Document</title>
@@ -43,13 +37,14 @@
                     <li><a href="#">Início</a></li>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Planos</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
         </section>
 
         <section class="menu-action">
-            <a href="#">Obter um orçamento</a>
+            <a href="#">Conferir planos</a>
         </section>
     </header>
 
@@ -74,11 +69,11 @@
 
         <!-- ABOUT -->
         <section class="about">
-            <div class="about-img" data-aos="fade-right" data-aos-once="false">
+            <div class="about-img" data-aos="fade-right" data-aos-once="true">
                 <img src="/Images.png" alt="">
             </div>
 
-            <div class="about-text" data-aos="fade-left" data-aos-once="false">
+            <div class="about-text" data-aos="fade-left" data-aos-once="true">
                 <div>
                     <h2>Bem-vindo a nossa empresa pró-limpeza!</h2>
                     <p>Fazemos o seu espaço brilhar! Empresa de serviços de limpeza profissional e confiável, que
@@ -130,183 +125,143 @@
         <!-- end ABOUT -->
 
         <!-- SERVICES -->
-        <section class="services" data-aos="fade-right" data-aos-once="false">
+        <section class="services" data-aos="fade-right" data-aos-once="true">
             <div class="services-title">
                 <h2>Oferecemos sempre o melhor serviço</h2>
                 <div class="services-text">
                     <h5>Serviços</h5>
                     <p>Embora possamos personalizar seu plano de limpeza para atender às suas necessidades, a maioria
-                        dos clientes agenda serviços de limpeza regulares:</p>
+                        dos clientes agenda serviços de limpeza regulares</p>
                 </div>
             </div>
 
             <div class="divider"></div> <!-- Linha divisória -->
 
-            <div class="services-cards" data-aos="slide-up" data-aos-once="false">
+            <div class="services-cards" data-aos="slide-up" data-aos-once="true">
                 <div class="card-item">
-                    <img src="/Image (1).png" alt="">
                     <div class="card-item-text">
-                        <h3>Limpeza de escritório</h3>
-                        <p>Embora possamos personalizar seu plano de limpeza para atender às suas necessidades, a
-                            maioria dos clientes agenda serviços de limpeza regulares:</p>
+                        <h3>Escritórios</h3>
+                        <p>Higienização completa de ambientes de trabalho, incluindo mesas, equipamentos, pisos e áreas
+                            comuns, para garantir um espaço seguro e organizado.</p>
                         <a href="/">Reserve agora</a>
                     </div>
                 </div>
+
                 <div class="card-item">
-                    <img src="/Image (1).png" alt="">
-                    <h3>Limpeza de escritório</h3>
-                    <p>Embora possamos personalizar seu plano de limpeza para atender às suas necessidades, a maioria
-                        dos clientes agenda serviços de limpeza regulares:</p>
+                    <h3>Casas</h3>
+                    <p>Limpeza detalhada e cuidadosa de residências, com foco em superfícies, pisos, cozinhas e
+                        banheiros, proporcionando um ambiente confortável e higienizado.</p>
                     <a href="/">Reserve agora</a>
                 </div>
+
                 <div class="card-item">
-                    <img src="/Image (1).png" alt="">
-                    <h3>Limpeza de escritório</h3>
-                    <p>Embora possamos personalizar seu plano de limpeza para atender às suas necessidades, a maioria
-                        dos clientes agenda serviços de limpeza regulares:</p>
+                    <h3>Jardins</h3>
+                    <p>Manutenção de áreas externas, incluindo remoção de folhas, limpeza de caminhos e cuidados com o
+                        paisagismo para um jardim sempre bem-cuidado.</p>
                     <a href="/">Reserve agora</a>
                 </div>
+
+                <div class="card-item">
+                    <div class="card-item-text">
+                        <h3>Escritórios</h3>
+                        <p>Higienização completa de ambientes de trabalho, incluindo mesas, equipamentos, pisos e áreas
+                            comuns, para garantir um espaço seguro e organizado.</p>
+                        <a href="/">Reserve agora</a>
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <h3>Casas</h3>
+                    <p>Limpeza detalhada e cuidadosa de residências, com foco em superfícies, pisos, cozinhas e
+                        banheiros, proporcionando um ambiente confortável e higienizado.</p>
+                    <a href="/">Reserve agora</a>
+                </div>
+
+                <div class="card-item">
+                    <h3>Jardins</h3>
+                    <p>Manutenção de áreas externas, incluindo remoção de folhas, limpeza de caminhos e cuidados com o
+                        paisagismo para um jardim sempre bem-cuidado.</p>
+                    <a href="/">Reserve agora</a>
+                </div>
+
             </div>
         </section>
         <!-- end SERVICES -->
 
         <!-- QUOTE -->
         <section class="quote">
-            <div class="quote-text" data-aos="fade-right" data-aos-once="false">
+            <div class="quote-text" data-aos="fade-right" data-aos-once="true">
                 <h5>Soluções de limpeza acessíveis</h5>
                 <h2>Serviços de alta qualidade e amigáveis a preços justos</h2>
                 <p>Oferecemos serviços de limpeza completos e personalizados para atender às suas necessidades, desde a
                     limpeza residencial até soluções específicas</p>
-                <a href="#">Obter um orçamento</a>
+                <a href="#">Comece agora</a>
             </div>
 
-            <div class="quote-img" data-aos="fade-left" data-aos-once="false">
+            <div class="quote-img" data-aos="fade-left" data-aos-once="true">
                 <img src="/Image (2).png" alt="">
             </div>
         </section>
         <!-- end QUOTE -->
 
         <!-- TEAM -->
-        <section class="team" data-aos="fade-up" data-aos-once="false">
-            <div class="team-text">
-                <div>
-                    <h2>A limpeza eficaz requer uma equipe de limpeza especializada</h2>
-                </div>
-                <div>
-                    <h5>Equipe de especialistas</h5>
-                    <p>Contamos com uma equipe de limpeza profissional especializada garantindo limpeza e higiene de
-                        alto nível para o seu espaço.</p>
-                </div>
-            </div>
-
-            <div class="divider"></div> <!-- Linha divisória -->
-
-            <div class="team-cards">
-                <div class="person-card">
-                    <img src="/Image (3).png" alt="">
-                    <div class="card-text">
-                        <h3>Roberta Silva</h3>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <!-- icone estrela -->
-                        <p>Ele é um membro especializado da equipe de limpeza que fornece limpeza completa com precisão
-                        </p>
-                    </div>
-                </div>
-
-                <div class="person-card">
-                    <img src="/Image (3).png" alt="">
-                    <div class="card-text">
-                        <h3>Roberta Silva</h3>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <!-- icone estrela -->
-                        <p>Ele é um membro especializado da equipe de limpeza que fornece limpeza completa com precisão
-                        </p>
-                    </div>
-                </div>
-
-                <div class="person-card">
-                    <img src="/Image (3).png" alt="">
-                    <div class="card-text">
-                        <h3>Roberta Silva</h3>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <!-- icone estrela -->
-                        <p>Ele é um membro especializado da equipe de limpeza que fornece limpeza completa com precisão
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end TEAM -->
-
-
 
         <!-- PLANS -->
         <section class="plans">
-            <div class="plans-text">
+            <div class="plans-text" data-aos="slide-down" data-aos-once="true">
                 <h5>Nossos preços</h5>
                 <h2>Escolha entre nossos planos</h2>
                 <h2>e preços mais baixos</h2>
             </div>
 
-            <div class="plans-cards" data-aos="slide-up" data-aos-once="false">
-                <div class="plans-item">
+            <div class="plans-cards">
+                <div class="plans-item" data-aos="fade-up" data-aos-once="true">
                     <div class="plans-title">
-                        <h4>PACOTE BÁSICO</h4>
-                        <h3><span>R$</span>179,90\<span>mês</span></h3>
+                        <h4>PLANO BÁSICO</h4>
+                        <h3><span>R$</span>159,90\<span>mês</span></h3>
                     </div>
                     <div class="plans-topics">
-                        <h5>▸ Dusting of all surfaces</h5>
-                        <h5>▸ Sweeping and mopping floors</h5>
-                        <h5>▸ Vacuuming carpets and rugs</h5>
-                        <h5>▸ Cleaning of kitchen surfaces</h5>
-                        <h5>▸ Cleaning of bathroom surfaces</h5>
-                        <h5>▸ Emptying trash bins</h5>
+                        <h5>▸ Limpeza de todas as superfícies</h5>
+                        <h5>▸ Varrer e esfregar pisos</h5>
+                        <h5>▸ Aspirar carpetes e tapetes</h5>
+                        <h5>▸ Limpeza de superfícies de cozinha</h5>
+                        <h5>▸ Limpeza de superfícies de banheiro</h5>
+                        <h5>▸ Esvaziar latas de lixo</h5>
                     </div>
-                    <a href="#">Reservar agora</a>
+                    <a href="#">Obter plano</a>
                 </div>
 
-                <div class="plans-item">
+                <div class="plans-item" data-aos="fade-up" data-aos-once="true">
                     <div class="plans-title">
-                        <h4>PACOTE BÁSICO</h4>
-                        <h3><span>R$</span>179,90\<span>mês</span></h3>
+                        <h4>PLANO CLEAN</h4>
+                        <h3><span>R$</span>189,90\<span>mês</span></h3>
                     </div>
                     <div class="plans-topics">
-                        <h5>▸ Dusting of all surfaces</h5>
-                        <h5>▸ Sweeping and mopping floors</h5>
-                        <h5>▸ Vacuuming carpets and rugs</h5>
-                        <h5>▸ Cleaning of kitchen surfaces</h5>
-                        <h5>▸ Cleaning of bathroom surfaces</h5>
-                        <h5>▸ Emptying trash bins</h5>
+                        <h5>▸ Todos os serviços do Plano Básico</h5>
+                        <h5>▸ Limpeza detalhada</h5>
+                        <h5>▸ Limpeza de apartamento da cozinha</h5>
+                        <h5>▸ Limpeza interna do micro-ondas</h5>
+                        <h5>▸ Troca de roupa da cama</h5>
+                        <h5>▸ Limpeza de paredes e portas</h5>
                     </div>
-                    <a href="#">Reservar agora</a>
+                    <a href="#">Obter plano</a>
                 </div>
 
-                <div class="plans-item">
+                <div class="plans-item" data-aos="fade-up" data-aos-once="true">
                     <div class="plans-title">
-                        <h4>PACOTE BÁSICO</h4>
-                        <h3><span>R$</span>179,90\<span>mês</span></h3>
+                        <h4>PLANO PREMIUM</h4>
+                        <h3><span>R$</span>219,90\<span>mês</span></h3>
                     </div>
                     <div class="plans-topics">
-                        <h5>▸ Dusting of all surfaces</h5>
-                        <h5>▸ Sweeping and mopping floors</h5>
-                        <h5>▸ Vacuuming carpets and rugs</h5>
-                        <h5>▸ Cleaning of kitchen surfaces</h5>
-                        <h5>▸ Cleaning of bathroom surfaces</h5>
-                        <h5>▸ Emptying trash bins</h5>
+                        <h5>▸ Todos os serviços do Plano Clean</h5>
+                        <h5>▸ Limpeza profunda de cozinha</h5>
+                        <h5>▸ Limpeza de rodapés e saídas de ar</h5>
+                        <h5>▸ Organização de armários</h5>
+                        <h5>▸ Limpeza de manchas em estofados</h5>
+                        <h5>▸ Limpeza detalhada de banheiros</h5>
+
                     </div>
-                    <a href="#">Reservar agora</a>
+                    <a href="#">Obter plano</a>
                 </div>
             </div>
         </section>
@@ -314,25 +269,28 @@
 
         <!-- FEEDBACK -->
         <section class="feedback">
-            <div class="feedback-text" data-aos="slide-right" data-aos-once="false">
+            <div class="feedback-text" data-aos="slide-right" data-aos-once="true">
                 <h2>Feedback sobre a experiência deles conosco</h2>
                 <p>Leia depoimentos de nossos clientes satisfeitos. Veja como nossos serviços de limpeza fizeram a
                     diferença em suas vidas e casas</p>
             </div>
 
-            <div class="swiper-container" data-aos="slide-left" data-aos-once="false">
+            <div class="swiper-container" data-aos="slide-left" data-aos-once="true">
                 <div class="swiper-wrapper" id="feedback-container">
                     <!-- Depoimentos serão inseridos aqui -->
                 </div>
-                <!-- Adicione botões de navegação -->
+                <!-- Adiciona botões de navegação -->
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+
+                <!-- Indicadores de navegação (pagination) -->
+                <div class="swiper-pagination"></div>
             </div>
         </section>
         <!-- end FEEDBACK -->
 
         <!-- CONTACT -->
-        <section class="contact" data-aos="fade-up" data-aos-once="false">
+        <section class="contact">
             <div class="contact-info">
                 <h2>Encontre-nos</h2>
 
@@ -343,7 +301,7 @@
                         </div>
                         <div>
                             <h4>Ligue para nós</h4>
-                            <p>(11) 4002-8922</p>
+                            <p>(11) 94002-8922</p>
                         </div>
                     </div>
 
@@ -352,14 +310,14 @@
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>
                         </div>
                         <div>
-                            <h4>Enviar e-mail agora</h4>
+                            <h4>Nosso e-mail</h4>
                             <p>contato@procleaning.com</p>
                         </div>
                     </div>
 
                     <div class="contact-info-icon">
                         <div>
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <i class="fa fa-map" aria-hidden="true"></i>
                         </div>
                         <div>
                             <h4>Endereço</h4>
@@ -380,18 +338,18 @@
                 <!-- FORMS -->
                 <div class="forms" id="forms">
                     <form id="contactForm">
-                        <input type="text" class="required" placeholder="Nome Completo" id="name">
+                        <input type="text" class="required" placeholder="Seu nome completo" id="name">
                         <span style="display: none; color: red;" id="spanName">Insira seu nome.</span>
 
                         <input type="text" class="required" placeholder="Assunto" id="subject">
-                        <span style="display: none; color: red;" id="spanSubject">Insira o assunto da sua
-                            mensagem</span>
+                        <span style="display: none; color: red;" id="spanSubject">Insira o tipo de assunto.</span>
+
+                        <input type="number" class="required" placeholder="Telefone" id="phone">
+                        <span style="display: none; color: red;" id="spanPhone">Insira um número válido com 11
+                            dígitos.</span>
 
                         <input type="email" class="required" placeholder="E-mail" id="email">
                         <span style="display: none; color: red;" id="spanEmail">Insira um email válido.</span>
-
-                        Reply to (Email)
-                        <input type="text" id="replyTo">
 
                         <textarea placeholder="Mensagem" id="message" cols="40" rows="8"></textarea>
                         <span style="display: none; color: red;" id="spanMessage">Insira uma mensagem.</span>
@@ -415,9 +373,10 @@
 
             <div class="footer-company">
                 <h3>Empresa</h3>
-                <a href="#">Sobre nós</a>
+                <a href="#">Sobre</a>
                 <a href="#">Serviços</a>
-                <a href="#">Nosso time</a>
+                <a href="#">Planos</a>
+                <a href="#">Contato</a>
             </div>
 
             <div class="footer-more">
@@ -426,26 +385,45 @@
                 <a href="#">Política de privacidade</a>
                 <a href="#">Termos e condições</a>
             </div>
+
+            <div class="social-medias">
+                <h3>Redes Sociais</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </div>
         </section>
 
         <div class="divider-footer"></div>
 
         <div class="footer-rights">
-            <h6>© Procleaning 2024 | Todos os direitos reservados | Desenvolvido por <a href="#">Gabrielly Silva</a>
-            </h6>
+            <div class="footer-rights-main">
+                <h6>© ProCleaning 2024</h6>
+                <h6>Todos os direitos reservados</h6>
+            </div>
+            <h6>Desenvolvido por Gabrielly Silva</h6>
         </div>
     </footer>
 
-    <script src="/script.js"></script>
+    <!-- Inicialização do EmailJS -->
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "FaoTyMxFAifp_HskI",
+            });
+        })();
+    </script>
 
     <!-- Outras bibliotecas -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
-            duration: 3000,
+            duration: 1000,
         });
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/index.html"></script>
 
 </body>
 
