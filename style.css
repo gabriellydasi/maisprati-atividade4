@@ -33,6 +33,10 @@ header {
     background-color: #FFFFFF;
 }
 
+main {
+    overflow-x: hidden;
+}
+
 /* MENU */
 .menu-navegacao ul {
     display: flex;
@@ -87,7 +91,7 @@ header {
     background-repeat: no-repeat;
     transition: background-image 1s ease-in-out;
     width: 100%;
-    overflow-x: hidden
+    overflow: hidden
 }
 
 .home-container {
@@ -96,7 +100,7 @@ header {
     border: none;
     border-radius: 20px;
     width: 100%;
-    overflow-x: hidden
+    overflow: hidden
 }
 
 .home {
@@ -105,12 +109,12 @@ header {
     padding-left: 135px;
     padding-right: 695px;
     box-sizing: border-box;
-    overflow-x: hidden
+    overflow: hidden;
 }
 
 .home-text {
     margin-bottom: 40px;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 .home-text h4 {
@@ -118,7 +122,7 @@ header {
     margin-bottom: 12px;
     font-weight: 500;
     line-height: 120%;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 .home-text h2 {
@@ -126,18 +130,21 @@ header {
     font-weight: bold;
     line-height: 115%;
     margin-bottom: 24px;
+    overflow-x: hidden;
 }
 
 .home-text h5 {
     font-size: 1.125rem;
     font-weight: 300;
     color: #666666;
+    overflow-x: hidden;
 }
 
 .home-buttons {
     display: flex;
     gap: 25px;
     justify-content: left;
+    overflow-x: hidden;
 }
 
 .home-buttons a {
@@ -147,6 +154,7 @@ header {
     border: none;
     background-color: var(--color-primary);
     color: #FFFFFF;
+    overflow-x: hidden;
 }
 
 .home-buttons a:nth-child(1) {
@@ -322,7 +330,7 @@ header {
 
 .card-item {
     padding-bottom: 30px;
-    width: 90%;
+    width: 100%;
 }
 
 .card-item h3 {
