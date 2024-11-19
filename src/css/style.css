@@ -900,6 +900,8 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   gap: 1.5rem;
+  padding-top: 100px;
+  padding-bottom: 100px;
   /* padding: 75px 135px; */
   /* display: flex; */
   /* gap: 80px; */
